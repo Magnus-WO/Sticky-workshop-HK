@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
+import storeNotes from "./storeNotes.js";
 
 //Function for creating a random number that controls the rotation of the notes
 export const generateRandomNumber = () => {
@@ -19,10 +20,9 @@ const addNotes = (subject, date, text) => {
   console.log(note);
 
   notesArray.push(note);
-
   console.log(notesArray);
 
-  //   storeNotes();
+  storeNotes(notesArray);
 };
 
 export default addNotes;
