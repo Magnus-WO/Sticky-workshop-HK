@@ -152,3 +152,61 @@ label {
 .note-card__text {
   padding: var(--spacing-small);
 }
+
+/* Styles for the delete modal ------------------------------------------------------ */
+.delete-modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: none;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.display-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-modal__container {
+  min-width: 400px;
+  width: 40%;
+  /* height: 40%; */
+  background-color: var(--color-note-background);
+
+  border-radius: var(--border-radius-medium);
+  padding: var(--spacing-medium) 0;
+}
+
+.delete-modal__text {
+  text-align: center;
+  padding: var(--spacing-small);
+}
+
+.delete-modal__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: var(--spacing-large);
+  padding: var(--spacing-small);
+}
+
+.delete-modal__confirm-button,
+.delete-modal__cancel-button {
+  min-width: 80px;
+  min-height: 32px;
+  font-family: kalam-bold;
+  background-color: var(--color-submit-buttons);
+  border: 1px solid black;
+  border-radius: var(--border-radius-small);
+}
+
+.delete-modal__confirm-button:hover,
+.delete-modal__cancel-button:hover {
+  opacity: 0.7;
+}
