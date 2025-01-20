@@ -37,7 +37,7 @@ form.addEventListener("submit", (e) => {
     };
 
     const updatedNotesList = notesList.map((note) => {
-      return note.id === editState.currentEditIde ? editedNote : note;
+      return note.id === editState.currentEditId ? editedNote : note;
     });
 
     storeNotes(updatedNotesList);
