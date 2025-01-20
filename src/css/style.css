@@ -210,3 +210,8 @@ label {
 .delete-modal__cancel-button:hover {
   opacity: 0.7;
 }
+
+/* Styles for the edit mode ------------------------------------------------------ */
+.note-card--edited {
+  background-color: yellow;
+}
